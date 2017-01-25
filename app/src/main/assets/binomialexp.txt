@@ -1,0 +1,8 @@
+In above table:-
+1.	All entries  below C(n,0) are 1 as C(n,0)=1 according to formula
+2.	Below C(n,1) for C(1,1) it will be case of C(n ,n)=1.Similarly for C(2,2), C(3,3) and so on.
+3.	Let us see values for 2 coefficients:-
+      C(2,1)=C(1,0)+C(1,1)=1+1=2
+      C(3,1)=C(2,0)+C(2,1)=1+2=3
+      C(5,3)=C(4,2)+C(4,3)=6+4=10
+These values of C(4,2) and C(4,3) will be pre evaluated similarly. So similarly it will be done for all entries

@@ -1,0 +1,10 @@
+In above table:-
+For input X=aab and Y=aba:
+1.	We first fill 1st column and 1st row with zero that is when either of m and n are 0.
+2.	If X[i]!=Y[j],then check top and left elements and write the maximum from them  and put (|,<--) By default : (|).
+3.	If X[i]==Y[j] then 1 is added to diagonal element and diagonal arrow is put (\).
+4.	For length of LCS and to find LCS.  The length of LCS is the last entry of table that is 2 in above case.
+5.	To find LCS walk from last entry in direction of arrow entries in reverse order.
+In above eg. LCS length=2
+                         LCS is ab 
+

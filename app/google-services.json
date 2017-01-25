@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "947514902843",
+    "firebase_url": "https://algo-explorer.firebaseio.com",
+    "project_id": "algo-explorer",
+    "storage_bucket": "algo-explorer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947514902843:android:23c6993aee8eb5d9",
+        "android_client_info": {
+          "package_name": "com.developers.algoexplorer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947514902843-ska5vnkmdu13u9dpj6qq2a6qdjfdg8e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key":" AIzaSyCItkJco__wuuK3_kR5M9H0ihhT4-tdOX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

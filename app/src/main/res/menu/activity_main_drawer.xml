@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="@string/menu_sorting" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_searching" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="@string/menu_dynamic" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="@string/menu_graph" />
+        <item
+            android:id="@+id/nav_share"
+            android:title="Complexity Plot" />
+    </group>
+</menu>

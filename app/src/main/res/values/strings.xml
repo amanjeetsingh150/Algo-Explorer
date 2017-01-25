@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Algo Explorer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Description">Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order.</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_sorting">Sorting</string>
+    <string name="search_desc">A search algorithm is the step-by-step procedure used to locate specific data among a collection of data. It is considered a fundamental procedure in computing. In computer science, when searching for data, the difference between a fast application and a slower one often lies in the use of the proper search algorithm.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_searching">Searching</string>
+    <string name="menu_dynamic">Dynamic Programming</string>
+    <string name="menu_graph">Graphs</string>
+    <string name="dynamic_desc">In computer science, Dynamic Programming is a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions – ideally, using a memory-based data structure.</string>
+    <string name="knapsack_desc">Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. This problem is solved by DP.</string>
+    <string name="knapsack_formula">We can define m[i,w] to be the maximum value that can be attained with weight less than or equal to w using items up to i as:\n• m[0,w]=0\n• m[i,w]=m[i-1,w] if wi>w\n• m[i,w]=max(m[i-1,w],m[i-1,w-wi]+vi) if wi is less than equal to w</string>
+    <string name="binomial_desc">Computing binomial coefficients is non optimization problem but can be solved using dynamic programming.\nBinomial coefficients are represented by C(n, k) or (nk) and can be used to represent the coefficients of a binomail:\n(a + b)^n  = C(n, 0)a^n + ... + C(n, k)a^n-kbk + ... + C(n, n)b^n</string>
+    <string name="binomial_formula">C(n, k) = C(n-1, k-1) + C(n-1, k) for n > k > 0\nC(n, 0) = C(n, n) = 1</string>
+    <string name="lcs_desc">The longest common subsequence or LCS is the problem of finding the longest subsequence common to all sequences in a set of sequences (often just two sequences). It can also be solved by Dynamic Programming. For eg. LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.</string>
+    <string name="lcs_formula">Given string X with length m, string Y with length n\n1. If m=0 or n=0 then 0\n2. If(X[i]==Y[j]) then 1+lcs(x,y,m-1,n-1)\n3. else max(lcs(X, Y, m, n-1), lcs(X, Y, m-1, n))</string>
+    <string name="mcm_desc">Matrix chain Multiplication or MCM is an optimization problem that can be solved by Dynamic Programming. It states: Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices. The problem is not actually to perform the multiplications, but merely to decide the sequence of the matrix multiplications involved such that there are minimum number of multiplication operations involved.</string>
+    <string name="mcm_formula">m[i,j]=0 if i==j\nmin{m[i,k]+m[k+1,j]+pi − 1 . pk . pj} if i is less than j\nwhere m[i,j] is minimum number of scalar multiplications\n and p array can be obtained by order of matrices.</string>
+    <string name="graphs_desc">A graph is an abstract notation used to represent the connection between pairs of nodes. The algorithms dealing with problem related with graphs comes in this section.</string>
+    <string name="floyd_desc">The Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles). It considers vertices of simple path P from i to j considering k vertices as intermediate. k takes values as shown in above solved example. The solution evaluated is by the technique of Dynamic Programming.</string>
+    <string name="dij_desc">Dijkstra algorithm solves shortest path problems between nodes in graph. Dijkstra algorithm to find the shortest path between a and b. It picks the unvisited vertex with the lowest distance, calculates the distance through it to each unvisited neighbor, and updates the neighbor distance if smaller. Mark visited (set to red) when done with neighbors. This is depicted in above example.</string>
+    <string name="visual_disc">From above plot counting from the topmost curve:-\n1.O(n^2)\n2.O(n*log n)\n3.O(n)\n4.O(log n)</string>
+    <string name="about_desc">AlgoExplorer is developed in keeping view about all type of the users from the school students to an expert. It contains all the relevant things about the algorithms that is programs, descriptions, psuedocode and examples. The topics covered till now in this version are as follows:\n1.Sorting\n2.Searching\n3.Dynamic Programming\n4.Graphs. Credits to the following websites :- 1. http://piratelearner.com\n2. https://wikimedia.org/wikipedia/\n3. http://www.personal.kent.edu/\n4. www.penjee.com\n5. https://www.cs.usfca.edu\n6. Wikipedia\n7.GeeksforGeeks. \nThe application is open sourced at following link feel free to contribute:-</string>
+</resources>

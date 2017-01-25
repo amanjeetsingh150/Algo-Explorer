@@ -1,0 +1,32 @@
+In above recursion tree,
+Input Values : ( 100, 70, 50, 10)
+Input weights: (10, 4, 6, 12)
+Splitting:-
+1.	Root node: For i=3 and w=12 (3,12)
+    Left: (2, 0) (When item is excluded)
+    Right: (2, 12) (When item is included)
+2.	For( 2,12)
+    Left: (1, 6) (When 2nd item w=6 is included)
+    Right: (1, 12) (When 2nd item excluded)
+3.	For(1,6)
+    Left: (0, 2) (When 1st item w=4 is included)
+    Right: (0, 6) (When 1st item excluded)
+4.	For (0,2)
+    Leaf node (-1, 2) when w=10 not included
+5.	For(0,6)
+    Leaf node (-1, 6) when w=10 not included
+6.	For(1,12)
+    Left: (0, 8) (When 1st item w=4 is included)
+    Right: (0, 12) (When 1st item excluded)
+7.	For (0,8)
+    Leaf node (-1, 8) when w=10 not included
+8.	For (0,12)
+    Leaf node (-1, 2) when w=10 is included and (-1, 12) when w=10 not included
+
+Costing:
+From below
+1.	For (0,6), (0,2), (0,8), (0, 12) m[0,w]=0
+2.	For (1,12) Case 3: max(m[0,12], m[0,12]+100)=max(0,100)=100
+3.	For (1,6)  Case 2: as 10>6 m[0,6]=0
+4.	For (2,12) Case 3: max(m[1,12], m[1,2]+70)=max(100,70)=100
+5.	For (3,12) Case3:max(m[2,12]+m[2,6]+50)=max(100,120)=120 
