@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Graphs");
         } else if (id == R.id.nav_share) {
              fragment=new VisualGraph();
+             getSupportActionBar().setTitle("Complexity Plot");
         }
         if(fragment!=null){
             FragmentManager fragmentManager=getSupportFragmentManager();
