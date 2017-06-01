@@ -47,15 +47,15 @@ public class SortingActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sorting);
-        sort=(TextView)findViewById(R.id.sortname);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        //sort=(TextView)findViewById(R.id.sortname);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
         mPager= (ViewPager) findViewById(R.id.pager);
         tab=(TabLayout)findViewById(R.id.tab);
         Bundle extras=getIntent().getExtras();
         title=extras.getString("sortname");
-        sort.setText(title);
+        //sort.setText(title);
         switch (title){
             case "Bubble Sort":
                 Glide.with(this).load(images[0]).into(new GlideDrawableImageViewTarget((ImageView) findViewById(R.id.gif)));

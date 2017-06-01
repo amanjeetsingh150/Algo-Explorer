@@ -25,10 +25,10 @@ public class GraphActivity extends AppCompatActivity {
         setContentView(R.layout.activity_graph);
         mPager4= (ViewPager) findViewById(R.id.pager3);
         graphtab= (TabLayout) findViewById(R.id.tab3);
-        graname= (TextView) findViewById(R.id.graname);
+        //graname= (TextView) findViewById(R.id.graname);
         Bundle extras=getIntent().getExtras();
         graphtitle=extras.getString("graphname");
-        graname.setText(graphtitle);
+        //graname.setText(graphtitle);
         switch (graphtitle){
             case "Floyd–Warshall algorithm":
                 Glide.with(this).load(R.drawable.floydwarshall).into(new GlideDrawableImageViewTarget((ImageView) findViewById(R.id.gifgraph)));
@@ -37,9 +37,9 @@ public class GraphActivity extends AppCompatActivity {
                 Glide.with(this).load(R.drawable.dijkstra_animation).into(new GlideDrawableImageViewTarget((ImageView) findViewById(R.id.gifgraph)));
                 break;
         }
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+  //      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    //    getSupportActionBar().setHomeButtonEnabled(true);
         graphtab.addTab(graphtab.newTab().setText("Description"));
         graphtab.addTab(graphtab.newTab().setText("Programs"));
         graphtab.addTab(graphtab.newTab().setText("Algorithms"));

@@ -25,13 +25,13 @@ public class DynamicActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dynamic);
         mPager3= (ViewPager) findViewById(R.id.pager2);
         dynamictab= (TabLayout) findViewById(R.id.tab2);
-        dyname= (TextView) findViewById(R.id.dyname);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        //dyname= (TextView) findViewById(R.id.dyname);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
         Bundle extras=getIntent().getExtras();
         dynamictitle=extras.getString("dynamicname");
-        dyname.setText(dynamictitle);
+        //dyname.setText(dynamictitle);
         switch(dynamictitle){
             case "0-1 Knapsack":
                 Glide.with(this).load(R.drawable.knapsack).into(new GlideDrawableImageViewTarget((ImageView) findViewById(R.id.gifdynamic)));

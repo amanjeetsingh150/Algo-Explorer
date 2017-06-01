@@ -22,6 +22,7 @@ import com.developers.algoexplorer.fragments.Graphs;
 import com.developers.algoexplorer.fragments.Searching;
 import com.developers.algoexplorer.fragments.Sorting;
 import com.developers.algoexplorer.fragments.VisualGraph;
+import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.commit();
             getSupportActionBar().setTitle(R.string.menu_sorting);
         }
+
+        MobileAds.initialize(MainActivity.this,"ca-app-pub-3940256099942544~3347511713");
     }
 
     @Override

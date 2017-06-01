@@ -34,6 +34,7 @@ dependencies {
     compile 'thereisnospon.codeview:codeview:0.3.1'
     compile 'com.diogobernardino:williamchart:2.4.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
 }
 apply plugin: 'com.google.gms.google-services'
 

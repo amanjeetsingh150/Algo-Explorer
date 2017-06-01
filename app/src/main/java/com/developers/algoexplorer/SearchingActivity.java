@@ -23,15 +23,15 @@ public class SearchingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searching);
-        searchalgoname= (TextView) findViewById(R.id.searchname);
+        //searchalgoname= (TextView) findViewById(R.id.searchname);
         mPager2=(ViewPager)findViewById(R.id.pager1);
         searchtab=(TabLayout)findViewById(R.id.tab1);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
         Bundle bundle=getIntent().getExtras();
         search=bundle.getString("searchname");
-        searchalgoname.setText(search);
+        //searchalgoname.setText(search);
         switch(search){
             case "Linear Search":
                 Glide.with(this).load(img).into(new GlideDrawableImageViewTarget((ImageView) findViewById(R.id.gif1)));

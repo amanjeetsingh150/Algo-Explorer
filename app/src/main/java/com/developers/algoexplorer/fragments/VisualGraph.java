@@ -18,7 +18,11 @@ import com.db.chart.Tools;
 import com.db.chart.model.LineSet;
 import com.db.chart.renderer.AxisRenderer;
 import com.db.chart.view.LineChartView;
+import com.developers.algoexplorer.MainActivity;
 import com.developers.algoexplorer.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,6 +38,7 @@ public class VisualGraph extends Fragment {
     private Paint paint1,paint2,paint3,paint4;
     private LineChartView lineChartView;
     private TextView graphdetail;
+    private AdView adView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,6 +46,15 @@ public class VisualGraph extends Fragment {
         View v3= inflater.inflate(R.layout.fragment_visual_graph, container, false);
         lineChartView= (LineChartView) v3.findViewById(R.id.linechart);
         graphdetail= (TextView) v3.findViewById(R.id.graphdetail);
+        adView= (AdView) v3.findViewById(R.id.adView);
+        /*AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);*/
+        MobileAds.initialize(getActivity(),
+                "ca-app-pub-3940256099942544~3347511713");
+        AdRequest request = new AdRequest.Builder()
+                .addTestDevice("CFF347E1F13269C9C8B2BFEAD3E6C7EC")
+                .build();
+        adView.loadAd(request);
         ngraph=new LineSet();
         nsqgraph=new LineSet();
         nlograph=new LineSet();
