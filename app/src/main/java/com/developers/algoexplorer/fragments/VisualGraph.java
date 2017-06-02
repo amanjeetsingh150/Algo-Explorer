@@ -47,8 +47,6 @@ public class VisualGraph extends Fragment {
         lineChartView= (LineChartView) v3.findViewById(R.id.linechart);
         graphdetail= (TextView) v3.findViewById(R.id.graphdetail);
         adView= (AdView) v3.findViewById(R.id.adView);
-        /*AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);*/
         MobileAds.initialize(getActivity(),
                 "ca-app-pub-3940256099942544~3347511713");
         AdRequest request = new AdRequest.Builder()

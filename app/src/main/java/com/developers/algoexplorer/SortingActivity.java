@@ -2,6 +2,7 @@ package com.developers.algoexplorer;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -35,11 +37,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class SortingActivity extends AppCompatActivity{
-    private TextView sort;
     private ViewPager mPager;
     private TabLayout tab;
+    private ProgressBar progressBar;
     private static String title;
-    private static int images[]=new int[]{R.drawable.bubble,R.drawable.mergesort_list,R.drawable.insertionsort,R.drawable.quicksort,
+    private static int images[]=new int[]{R.drawable.bubble,R.drawable.mergesort,R.drawable.insertionsort,R.drawable.quicksort,
                                           R.drawable.heapsort,R.drawable.selection};
 
     private TabPagerAdapter tabPagerAdapter;
@@ -47,15 +49,12 @@ public class SortingActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sorting);
-        //sort=(TextView)findViewById(R.id.sortname);
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //getSupportActionBar().setHomeButtonEnabled(true);
         mPager= (ViewPager) findViewById(R.id.pager);
         tab=(TabLayout)findViewById(R.id.tab);
+        progressBar= (ProgressBar) findViewById(R.id.prog);
+        progressBar.setVisibility(View.VISIBLE);
         Bundle extras=getIntent().getExtras();
         title=extras.getString("sortname");
-        //sort.setText(title);
         switch (title){
             case "Bubble Sort":
                 Glide.with(this).load(images[0]).into(new GlideDrawableImageViewTarget((ImageView) findViewById(R.id.gif)));
